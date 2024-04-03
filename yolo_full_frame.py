@@ -7,7 +7,7 @@ import time
 import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 # Load the YOLOv8 mode,l
-model = YOLO("Models/Plane2-320/best.pt")
+model = YOLO("best.pt")
 # model.export(format='onnx' , dynamic = True , optimize = True , simplify = True)
 # Open the video file
 video_path = "test.mp4"
