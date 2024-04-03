@@ -22,7 +22,7 @@ def predict_on_subframes(frame, start_x, start_y, end_x, end_y, model,confident 
 
 
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
-model = YOLO("Models/Plane2-320/best.pt")
+model = YOLO("best.pt")
 cap = cv2.VideoCapture("test.mp4")
 imgsz = (320, 320)
 device = 'cpu'
